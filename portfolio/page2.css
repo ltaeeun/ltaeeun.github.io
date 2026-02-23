@@ -1,0 +1,139 @@
+#content-wrap {
+    padding: 100px;
+}
+
+img.firstImg {
+    max-width: 700px;
+    height: auto;
+    animation: floaty 3.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.scroll {
+    height: 100px;
+}
+
+.subheading {
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+
+
+.descriptions {
+    gap: 3%;
+    margin: -50px 0 20px;
+}
+
+
+.description {
+  flex: 47%;      
+}
+
+.description .cursive {
+    margin: 0 0 30px;
+}
+
+
+
+
+.subbox .image{
+  width: 58%; 
+  height: auto;
+  max-height: 900px;
+  
+}
+
+
+.subcontent {
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.image-flex {
+    gap: 2%;
+}
+
+.image-flex img {
+    width: 48%;
+    height: auto;
+}
+
+
+img, video {
+    margin: 30px 0;
+    object-fit: contain;
+    max-height: 1000px;
+    /* object-position: left; */
+}
+
+
+
+
+@keyframes floaty {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-5px); }  /* 숫자 작을수록 subtle */
+  100% { transform: translateY(0px); }
+}
+
+
+
+
+.footer {
+    padding: 50px 0 0;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+
+@media (max-width: 1200px) {
+    .mainFlex {
+        flex-direction: column;
+    }
+
+    .subbox {
+        flex-direction: column;
+    }
+
+    .subbox .image {
+        width: 100%;
+    }
+
+    .box img, .box video {
+    width: 100%;
+    margin: 20px auto;
+    object-position: center;
+    }
+    .firstImg {
+        margin: 0 auto;
+    }
+    #content-wrap {
+    padding: 20px;
+}
+}
+
+@media (max-width: 800px) {
+    .descriptions{
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+        height: 700px;
+    }
+
+    .description .cursive {
+        margin: 30px 0 20px;
+    }
+
+    .image-flex {
+        flex-direction: column;
+    }
+
+    .image-flex img {
+        width: 100%;
+    }
+}
