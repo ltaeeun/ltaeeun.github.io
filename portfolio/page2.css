@@ -1,12 +1,13 @@
 #content-wrap {
-    padding: 100px;
+    padding: 100px 50px;
+
 }
 
 img.firstImg {
     max-width: 700px;
     height: auto;
     animation: floaty 3.5s ease-in-out infinite;
-  will-change: transform;
+    will-change: transform;
 }
 
 .scroll {
@@ -27,7 +28,7 @@ img.firstImg {
 
 
 .description {
-  flex: 47%;      
+    flex: 47%;
 }
 
 .description .cursive {
@@ -37,43 +38,83 @@ img.firstImg {
 
 
 
-.subbox .image{
-  width: 58%; 
-  height: auto;
-  max-height: 900px;
-  
+.subbox .image {
+    width: 58%;
+    height: auto;
+    max-height: 900px;
+
 }
 
 
 .subcontent {
     line-height: 1.8;
     margin: 20px 0;
+    max-width: 400px;
 }
 
 .image-flex {
-    gap: 2%;
+    gap: 1%;
 }
 
 .image-flex img {
-    width: 48%;
-    height: auto;
+    width: 49.5%;
+    height: 100%;
 }
 
 
-img, video {
-    margin: 30px 0;
+img,
+video {
+    margin: 10px 0;
     object-fit: contain;
     max-height: 1000px;
     /* object-position: left; */
 }
 
+.bookFull.horizontal {
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.bookFull.horizontal img {
+    width: 90%;
+    height: auto;
+}
+
+.bookFull.vertical {
+    flex-direction: column;
+
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+
+    height: 90vh;
+}
 
 
+.bookFull.vertical img {
+    transform: rotate(90deg);
+    transform-origin: center;
+    width: auto;
+    margin: 71.5% 0 0;
+}
+
+.bookFull.vertical img:first-child {
+    margin: 0;
+}
 
 @keyframes floaty {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-5px); }  /* 숫자 작을수록 subtle */
-  100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    /* 숫자 작을수록 subtle */
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 
@@ -102,21 +143,24 @@ iframe {
         width: 100%;
     }
 
-    .box img, .box video {
-    width: 100%;
-    margin: 20px auto;
-    object-position: center;
+    .box img,
+    .box video {
+        width: 100%;
+        margin: 20px auto;
+        object-position: center;
     }
+
     .firstImg {
         margin: 0 auto;
     }
+
     #content-wrap {
-    padding: 20px;
-}
+        padding: 20px;
+    }
 }
 
 @media (max-width: 800px) {
-    .descriptions{
+    .descriptions {
         flex-direction: column;
     }
 

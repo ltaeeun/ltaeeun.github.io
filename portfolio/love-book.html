@@ -70,14 +70,34 @@
 
 
         <div>
-             <img src="image/loveBook/2.png" alt="">
-            <div class="flex image-flex">
-            <img src="image/loveBook/3.png" alt="">
-             <img src="image/loveBook/5.png" alt="">
+            <img src="image/loveBook/bookPhotos/bookPhoto-1.jpg" alt="">
+            <img src="image/loveBook/bookPhotos/bookPhoto-2.jpg" alt="">
+            <img src="image/loveBook/bookPhotos/bookPhoto-3.jpg" alt="">
+
+
+            <img src="image/loveBook/4.png" alt="">
+
+            <button id="toggleBtn">change direction</button>
+            <div class="flex bookFull horizontal">
+                <img src="image/loveBook/bookFull/Final2.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final3.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final4.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final5.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final6.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final7.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final8.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final9.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final10.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final11.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final12.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final13.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final14.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final15.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final16.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final17.jpg" alt="">
+                <img src="image/loveBook/bookFull/Final18.jpg" alt="">
             </div>
 
-           
-            <img src="image/loveBook/4.png" alt="">
 
 
 
@@ -90,6 +110,19 @@
 
     </div>
 
+    <script>
+        const btn = document.getElementById("toggleBtn");
+        const gallery = document.querySelector(".bookFull");
+
+        btn.addEventListener("click", () => {
+            if (gallery.classList.contains("horizontal")) {
+                gallery.classList.toggle("vertical");
+            } else {
+                gallery.classList.toggle("horizontal");
+            }
+            ;
+        });
+    </script>
 </body>
 
 </html>
