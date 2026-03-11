@@ -46,7 +46,6 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
-    /* gap: 2%; */
 }
 
 
@@ -66,7 +65,7 @@ body {
 #header {
     width: 100%;
     align-items: baseline;
-    z-index: 1000;
+    
 }
 
 #header ul.flex li {
@@ -77,8 +76,9 @@ body {
 
 #fixed {
     position: fixed;
-        padding: 50px;
+    padding: 50px;
     width: 100vw;
+    
 }
 
 /*fixed body------------------------------*/
